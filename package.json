@@ -1,0 +1,18 @@
+{
+    "name": "bun-windows-via-docker",
+    "version": "1.0.0",
+    "author": "Louis Lam",
+    "license": "MIT",
+    "description": "Use Bun on Windows via Docker Desktop",
+    "type": "module",
+    "scripts": {
+        "test": "bun test.ts"
+    },
+    "bin": {
+        "bun": "./cli.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/louislam/bun-windows-via-docker.git"
+    }
+}
