@@ -9,13 +9,16 @@
         "test": "bun test.ts"
     },
     "bin": {
-        "bun": "./cli.js"
+        "bun": "./bun.js",
+        "bunx": "./bunx.js"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com/louislam/bun-windows-via-docker.git"
     },
     "files": [
-        "cli.js"
+        "cli.js",
+        "bun.js",
+        "bunx.js"
     ]
 }
