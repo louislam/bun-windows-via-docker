@@ -23,10 +23,12 @@ if (process.env.BUN_DOCKER_IMAGE) {
 childProcess.spawn("docker", [
     "run",
     "--init",
+    "-it",
     "--rm",
     "--ulimit", "memlock=-1:-1",
     "-v", process.cwd() + ":/home/bun/app",
     image + ":" + tag,
+    "bun",
     ... args,
 ], {
     stdio: "inherit",
